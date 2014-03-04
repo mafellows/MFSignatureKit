@@ -12,8 +12,6 @@
     CGPoint previousPoint;
 }
 
-@property (nonatomic, strong) UIBezierPath *path;
-
 @end
 
 @implementation MFSignatureView
@@ -23,7 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialize path
-        self.path = [UIBezierPath bezierPath];
+        // self.path = [UIBezierPath bezierPath];
         
         // Initialize line properties
         self.lineWidth = 2;
@@ -51,12 +49,13 @@
 }
 
 // Lazy instantiation of path
-//- (void)setPath:(UIBezierPath *)path
-//{
-//    if (!_path) {
-//        _path = [UIBezierPath bezierPath];
-//    }
-//}
+- (UIBezierPath *)path
+{
+    if (!_path) {
+        _path = [UIBezierPath bezierPath];
+    }
+    return _path;
+}
 
 #pragma mark - Selector
 

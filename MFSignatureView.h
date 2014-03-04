@@ -16,5 +16,8 @@
  */
 @property UIColor *bgColor;
 @property UIColor *lineColor; 
-@property NSInteger lineWidth; 
+@property NSInteger lineWidth;
+
+// Public access to the path allows you to clear when needed.
+@property (nonatomic, strong) UIBezierPath *path;
 @end

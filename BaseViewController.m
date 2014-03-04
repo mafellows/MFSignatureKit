@@ -30,8 +30,8 @@
     
     MFSignatureView *signatureView = [[MFSignatureView alloc] initWithFrame:self.view.frame];
     signatureView.lineColor = [UIColor blackColor];
-    signatureView.lineWidth = 10;
-    signatureView.backgroundColor = [UIColor grayColor];
+    signatureView.lineWidth = 3;
+    signatureView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:signatureView]; 
 }
 
