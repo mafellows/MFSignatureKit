@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MFSignatureView.h"
 
 @interface BaseViewController ()
 
@@ -26,7 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    MFSignatureView *signatureView = [[MFSignatureView alloc] initWithFrame:self.view.frame];
+    signatureView.lineColor = [UIColor blackColor];
+    signatureView.lineWidth = 10;
+    signatureView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:signatureView]; 
 }
 
 - (void)didReceiveMemoryWarning

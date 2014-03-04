@@ -10,4 +10,11 @@
 
 @interface MFSignatureView : UIView
 
+/*
+ *  Customize the background color, line width, and line color with
+ *  these three properties. 
+ */
+@property UIColor *bgColor;
+@property UIColor *lineColor; 
+@property NSInteger lineWidth; 
 @end

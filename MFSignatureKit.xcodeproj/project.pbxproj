@@ -19,6 +19,9 @@
 		8FF89D8818C61F67000BBD13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF89D7018C61F66000BBD13 /* UIKit.framework */; };
 		8FF89D9018C61F67000BBD13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FF89D8E18C61F67000BBD13 /* InfoPlist.strings */; };
 		8FF89D9218C61F67000BBD13 /* MFSignatureKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF89D9118C61F67000BBD13 /* MFSignatureKitTests.m */; };
+		8FF89DA118C6209C000BBD13 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF89D9F18C6209C000BBD13 /* BaseViewController.m */; };
+		8FF89DA218C6209C000BBD13 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF89DA018C6209C000BBD13 /* BaseViewController.xib */; };
+		8FF89DA518C62132000BBD13 /* MFSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF89DA418C62132000BBD13 /* MFSignatureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		8FF89D8D18C61F67000BBD13 /* MFSignatureKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MFSignatureKitTests-Info.plist"; sourceTree = "<group>"; };
 		8FF89D8F18C61F67000BBD13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8FF89D9118C61F67000BBD13 /* MFSignatureKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFSignatureKitTests.m; sourceTree = "<group>"; };
+		8FF89D9E18C6209C000BBD13 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8FF89D9F18C6209C000BBD13 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8FF89DA018C6209C000BBD13 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		8FF89DA318C62132000BBD13 /* MFSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSignatureView.h; sourceTree = "<group>"; };
+		8FF89DA418C62132000BBD13 /* MFSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSignatureView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,11 @@
 		8FF89D6018C61F66000BBD13 = {
 			isa = PBXGroup;
 			children = (
+				8FF89DA318C62132000BBD13 /* MFSignatureView.h */,
+				8FF89DA418C62132000BBD13 /* MFSignatureView.m */,
+				8FF89D9E18C6209C000BBD13 /* BaseViewController.h */,
+				8FF89D9F18C6209C000BBD13 /* BaseViewController.m */,
+				8FF89DA018C6209C000BBD13 /* BaseViewController.xib */,
 				8FF89D7218C61F66000BBD13 /* MFSignatureKit */,
 				8FF89D8B18C61F67000BBD13 /* MFSignatureKitTests */,
 				8FF89D6B18C61F66000BBD13 /* Frameworks */,
@@ -219,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF89DA218C6209C000BBD13 /* BaseViewController.xib in Resources */,
 				8FF89D7718C61F66000BBD13 /* InfoPlist.strings in Resources */,
 				8FF89D7F18C61F66000BBD13 /* Images.xcassets in Resources */,
 			);
@@ -239,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF89DA518C62132000BBD13 /* MFSignatureView.m in Sources */,
 				8FF89D7D18C61F66000BBD13 /* AppDelegate.m in Sources */,
+				8FF89DA118C6209C000BBD13 /* BaseViewController.m in Sources */,
 				8FF89D7918C61F66000BBD13 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
